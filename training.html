@@ -21,8 +21,10 @@
     <div id="reviewMenu">
         <label>Select Material to Review</label>
         <ul>
-            <li><input type="checkbox" onchange="changeReviewState('hiragana', this.checked)"> Hiragana</li>
-            <li><input type="checkbox" onchange="changeReviewState('katakana', this.checked)"> Katakana</li>
+            <li><input type="checkbox" onchange="changeReviewState('hiragana', this.checked)">Hiragana</li>
+            <li><input type="checkbox" onchange="changeReviewState('hiraganaDiacriticsAndDigraphs', this.checked)">Hiragana Diacritics and Digraphs</li>
+            <li><input type="checkbox" onchange="changeReviewState('katakana', this.checked)">Katakana</li>
+            <li><input type="checkbox" onchange="changeReviewState('katakanaDiacriticsAndDigraphs', this.checked)">Katakana Diacritics and Digraphs</li>
         </ul>
     </div>
 
@@ -30,7 +32,7 @@
     <div id="reviewInput">
         <!-- Question Body containing the current question and user input box -->
         <div id="currentQuestionBody">
-            <p id="currentQuestion">Select Review Material on the Left</p>
+            <p id="currentQuestion">Select material to review on the Left</p>
             <br>
             <form id="userInputForm" autocomplete="off" onsubmit="checkAnswer(document.getElementById('currentQuestion'),
                                                                                 document.getElementById('userInputTextBox'),
