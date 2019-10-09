@@ -1,0 +1,93 @@
+#applicationTitle {
+    text-align: center;
+}
+
+#applicationBody {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Left side menu */
+#reviewMenu {
+    text-align: left;
+    float: left;
+    width: 25%;
+}
+
+#reviewMenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Right side user input and testing */
+#reviewInput {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#currentQuestionBody {
+    border-style: solid;
+    border-width: 2px;
+}
+
+#currentQuestion {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#userInputForm {
+    text-align: center;
+}
+
+#userInputTextBox {
+    outline: none;
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#userInputTextBox:focus {
+    border: 0px;
+}
+
+#submitButton {
+    display: none;
+}
+
+#previousQuestionBody {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    visibility: hidden;
+}
+
+#previousQuestionResult {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#previousQuestion {
+    font-size: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#previousQuestionAnswer {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+#reviewScore {
+    clear: both;
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Logical Japanese Training</title>
+</head>
+<body>
+
+<script src="reviewApp.js"></script>
+
+<header id="applicationTitle">
+    <h1>論理的な日本語</h1>
+    <h2>Logical Japanese Review Tool</h2>
+</header>
+
+<!-- The App -->
+<div id="applicationBody">
+
+    <!-- Menu for selecting content to review -->
+    <div id="reviewMenu">
+        <label>Select Material to Review</label>
+        <ul>
+            <li><input type="checkbox" onchange="changeReviewState('hiragana', this.checked)"> Hiragana</li>
+            <li><input type="checkbox" onchange="changeReviewState('katakana', this.checked)"> Katakana</li>
+        </ul>
+    </div>
+
+    <!-- The interactive side of the app -->
+    <div id="reviewInput">
+        <!-- Question Body containing the current question and user input box -->
+        <div id="currentQuestionBody">
+            <p id="currentQuestion">Select Review Material on the Left</p>
+            <br>
+            <form id="userInputForm" autocomplete="off" onsubmit="checkAnswer(document.getElementById('currentQuestion'),
+                                                                                document.getElementById('userInputTextBox'),
+                                                                                this,
+                                                                                document.getElementById('previousQuestionResult'),
+                                                                                document.getElementById('previousQuestion'),
+                                                                                document.getElementById('previousQuestionAnswer'));
+                                                                    getNextCharacter(document.getElementById('currentQuestion'));
+                                                                    updateScore(document.getElementById('score'), document.getElementById('percent'));
+                                                                    return false;">
+                <!-- Always keep the input box focused -->
+                <input id="userInputTextBox" type="text" onblur="this.focus()" autofocus>
+                <input id="submitButton" type="submit">
+            </form>
+        </div>
+
+        <!-- Question Body containing the previous question and answer -->
+        <div id="previousQuestionBody">
+            <p id=previousQuestionResult>Correct!</p>
+            <br>
+            <p id=previousQuestion>あ</p>
+            <p id=previousQuestionAnswer>A</p>
+        </div>
+        <div id="reviewScore">
+            <p id="score">Score: 0 / 0</p>
+            <p id="percent">0%</p>
+        </div>
+    </div>
+
+    
+</div>
+
+</body>
+</html>
