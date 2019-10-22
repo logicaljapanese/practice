@@ -275,7 +275,7 @@ function getVocabSet1()
 {
     return {"おちゃ":["tea"],"りんご":["apple"],"パン":["bread"],"あめ":["hard candy", "rain"],"みず":["water"],
             "犬":["dog"],"ねこ":["cat"],"とり":["bird"],"ぶた":["pig"],"さかな":["fish"],
-            "くるま":["car"],"ひこうき":["airplane"],"じてんしゃ":["bicycle"],"バス":["bus"],"タクシー":["taxi"],
+            "くるま":["car"],"ひこうき":["airplane","plane"],"じてんしゃ":["bicycle"],"バス":["bus"],"タクシー":["taxi"],
             "いす":["chair"],"テーブル":["table"],"つくえ":["desk"],"テレビ":["tv", "television"],"ベッド":["bed"]}
 }
 
